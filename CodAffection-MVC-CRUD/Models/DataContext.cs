@@ -5,10 +5,9 @@ namespace CodAffection_MVC_CRUD.Models
 {
     public class DataContext : DbContext
     {
-
         public DataContext(DbContextOptions<DataContext> dbContextOption) : base(dbContextOption) { }
 
-        DbSet<Employee> Employees { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
     }
 }
